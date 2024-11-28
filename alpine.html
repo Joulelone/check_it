@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projet Alpine.js</title>
+  <link rel="stylesheet" href="my-alpine-project/style.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body>
+  <div x-data="{ count: 0 }">
+    <h1 x-text="count"></h1>
+    <button @click="count++">Increment</button>
+    <button @click="count--">Decrement</button>
+  </div>
+  <div x-data="{ show: true }">
+    <button @click="show = !show">Toggle</button>
+    <div x-show="show">
+      Ce contenu est visible lorsque "show" est vrai.
+    </div>
+  </div>
+  <div x-data="{ text: '', displayText: '' }">
+    <input type="text" x-model="text" @keydown.enter="displayText = text" placeholder="Tapez quelque chose">
+    <p x-show="displayText" x-text="displayText"></p>
+  </div>
+  <div x-data="{ open: false }">
+    <button @click="open = !open">Afficher/Masquer avec Transition</button>
+    <div x-show="open" x-transition:enter="transition ease-out duration-300"
+         x-transition:enter-start="opacity-0 transform scale-90"
+         x-transition:enter-end="opacity-100 transform scale-100"
+         x-transition:leave="transition ease-in duration-300"
+         x-transition:leave-start="opacity-100 transform scale-100"
+         x-transition:leave-end="opacity-0 transform scale-90">
+      Contenu avec animation
+    </div>
+  </div>
+  <div x-data="{ active: false }">
+    <button @click="active = !active" :class="{ 'bg-blue-500 text-white': active, 'bg-gray-300': !active }">
+      Bouton avec classes dynamiques
+    </button>
+  </div>
+  <div x-data="{ dragging: null, items: ['A', 'B', 'C'] }">
+    <template x-for="(item, index) in items" :key="item">
+      <div draggable="true" 
+           @dragstart="dragging = index"
+           @dragover.prevent 
+           @drop="items.splice(index, 0, items.splice(dragging, 1)[0])"
+           class="border p-2 m-2">
+        <span x-text="item"></span>
+      </div>
+    </template>
+  </div>      
+  <div x-data="{ items: ['Apple', 'Banana', 'Cherry'] }">
+    <template x-for="item in items" :key="item">
+      <p x-text="item"></p>
+    </template>
+  </div>      
+</body>
+</html>
