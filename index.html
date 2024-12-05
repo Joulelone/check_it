@@ -9,30 +9,39 @@
   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 <body>
-  <header class="bg-primary text-light p-6 flex justify-between items-center">
-    <h1 class="text-4xl font-heading font-bold">Check it</h1>
+  <header class="bg-light text-primary p-6">
+    <div class="container mx-auto flex justify-center items-center">
+      <img src="/assets/logocheckitbleu.png" alt="Logo Check it" class="h-12">
+    </div>
   </header>  
-  <section class="bg-primary text-light p-12 flex justify-between items-center">
-    <div>
-      <h2 class="text-5xl font-heading font-bold">Partagez votre histoire</h2>
-      <ul class="mt-4 space-y-2">
+  <section class="bg-primary text-light p-12 flex flex-col md:flex-row justify-between items-center gap-6">
+    <div class="text-center md:text-left">
+      <h2 class="text-5xl font-bold mb-4 leading-tight">
+        Partagez <br> votre histoire
+      </h2>
+      <ul class="mt-4 space-y-2 text-lg">
         <li class="flex items-center gap-2"><span>✔</span> Partagez</li>
         <li class="flex items-center gap-2"><span>✔</span> Discutez</li>
         <li class="flex items-center gap-2"><span>✔</span> Informez</li>
       </ul>
-      <button class="mt-6 bg-secondary text-primary px-6 py-2 rounded-lg font-bold">Participer au podcast</button>
+      <button class="mt-6 bg-secondary text-primary px-6 py-2 rounded-lg font-bold hover:bg-accent">
+        Participez au podcast
+      </button>
     </div>
-    <img src="/assets/img.jpg" alt="Podcast" class="w-1/3 rounded-lg shadow-lg">
-  </section>
-  <section class="p-12 text-primary bg-light">
-    <h2 class="text-4xl font-heading font-bold mb-6">Qu'est-ce que Check it ?</h2>
-    <p class="text-lg">
-      Check It est une campagne fondée par l'ARCOM pour lutter contre la désinformation...
-    </p>
-    <div class="mt-8 grid grid-cols-2 gap-6">
+    <img src="/assets/mic.jpg" alt="Podcast" class="w-full md:w-1/2 rounded-lg shadow-lg">
+  </section>  
+  <!-- Section: Qu'est-ce que Check it ? -->
+  <section class="p-12 bg-light flex flex-row gap-12 items-center">
+    <div class="w-1/2">
+      <h2 class="text-4xl font-heading font-bold mb-6">Qu'est-ce que Check it ?</h2>
+      <p class="text-lg">
+        Check It est une campagne fondée par l'ARCOM pour lutter contre la désinformation et sensibiliser le public. À travers des outils pratiques, nous aidons à vérifier les sources et protéger la vérité en ligne.
+      </p>
+    </div>
+    <div class="w-1/2 grid grid-cols-2 gap-6">
       <div class="text-center">
         <p class="text-3xl font-bold">3h30</p>
-        <p class="text-sm">EN MOYENNE sur internet</p>
+        <p class="text-sm">EN MOYENNE sur Internet</p>
       </div>
       <div class="text-center">
         <p class="text-3xl font-bold">5.7</p>
@@ -47,10 +56,16 @@
         <p class="text-sm">CONFRONTÉ aux fausses informations</p>
       </div>
     </div>
-  </section>  
-  <section class="bg-primary text-light p-12">
-    <h2 class="text-4xl font-heading font-bold mb-6">Écouter pour se protéger</h2>
-    <div class="grid grid-cols-3 gap-6">
+  </section>
+  <!-- Section: Écouter pour se protéger -->
+  <section class="bg-primary text-light p-12 flex flex-row gap-12 items-center">
+    <div class="w-1/2">
+      <h2 class="text-4xl font-heading font-bold mb-6">Écouter pour se protéger</h2>
+      <p class="text-lg">
+        Plongez dans des récits captivants, des analyses d'experts et des témoignages inspirants pour mieux comprendre et interpréter nos médias.
+      </p>
+    </div>
+    <div class="w-1/2 grid grid-cols-3 gap-6">
       <div class="flex flex-col items-center">
         <span class="text-5xl">👨‍⚕️</span>
         <p class="mt-2">Experts</p>
@@ -64,41 +79,58 @@
         <p class="mt-2">Analyses</p>
       </div>
     </div>
-  </section>  
-  <section class="bg-light p-12">
-    <h2 class="text-4xl font-heading font-bold mb-6">Partagez votre histoire</h2>
-    <p class="text-lg">
-      Prenez la parole, partagez votre histoire et inspirez d'autres personnes avec votre expérience.
-    </p>
-      <form class="space-y-4">
+  </section>
+  <!-- Section: Partagez votre histoire (formulaire) -->
+  <section class="bg-light p-12 flex flex-row gap-12 items-center">
+    <div class="w-1/2">
+      <h2 class="text-4xl font-heading font-bold mb-6">Partagez votre histoire</h2>
+      <p class="text-lg">
+        Prenez la parole, partagez votre histoire et inspirez d'autres personnes avec votre expérience.
+      </p>
+    </div>
+    <form class="w-1/2 space-y-4">
       <div>
-        <label class="block text-primary">Prénom</label>
+        <label class="block text-primary font-medium">Prénom</label>
         <input type="text" class="w-full border border-gray-300 rounded-lg p-2">
       </div>
       <div>
-        <label class="block text-primary">Nom</label>
+        <label class="block text-primary font-medium">Nom</label>
         <input type="text" class="w-full border border-gray-300 rounded-lg p-2">
       </div>
       <div>
-        <label class="block text-primary">Mail</label>
+        <label class="block text-primary font-medium">Mail</label>
         <input type="email" class="w-full border border-gray-300 rounded-lg p-2">
       </div>
       <div>
-        <label class="block text-primary">Message</label>
-        <textarea class="w-full border border-gray-300 rounded-lg p-2"></textarea>
+        <label class="block text-primary font-medium">Message</label>
+        <textarea class="w-full border border-gray-300 rounded-lg p-2" rows="4"></textarea>
       </div>
-      <button class="bg-secondary text-primary px-6 py-2 rounded-lg font-bold">Envoyer</button>
+      <button type="submit" class="w-full bg-secondary text-primary px-6 py-2 rounded-lg font-bold">Envoyer</button>
     </form>
   </section>
-  <section class="p-12 text-primary bg-light">
-    <div class="mt-8 grid grid-cols-2 gap-6">
-      <div class="text-center">
-        <p class="text-xl">Découvrez notre Podcast</p>
-      </div>
-      <div class="text-center">
-        <p class="text-base">Partie ou le podcast sera afficher</p>
-      </div>
+  <!-- Section: Podcast -->
+  <section class="p-12 bg-light flex flex-row gap-12 items-center">
+    <div class="w-1/2">
+      <h2 class="text-4xl font-heading font-bold mb-6">Découvrez notre podcast</h2>
     </div>
+    <ul class="w-1/2 space-y-4">
+      <li class="flex justify-between items-center bg-gray-100 p-4 rounded-lg shadow">
+        <span>J'ai perdu ma maison</span>
+        <button class="text-blue-500">Aperçu</button>
+      </li>
+      <li class="flex justify-between items-center bg-gray-100 p-4 rounded-lg shadow">
+        <span>J'ai vécu 6 ans dans un bunker</span>
+        <button class="text-blue-500">Aperçu</button>
+      </li>
+      <li class="flex justify-between items-center bg-gray-100 p-4 rounded-lg shadow">
+        <span>La Terre est plate</span>
+        <button class="text-blue-500">Aperçu</button>
+      </li>
+      <li class="flex justify-between items-center bg-gray-100 p-4 rounded-lg shadow">
+        <span>J'ai arrêté l'eau</span>
+        <button class="text-blue-500">Aperçu</button>
+      </li>
+    </ul>
   </section>
   <section class="p-12 text-primary bg-light">
     <p class="text-lg">

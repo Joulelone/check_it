@@ -11,7 +11,7 @@ module.exports = {
         primary: "#1E3A8A", // Bleu principal
         secondary: "#60A5FA", // Bleu clair
         background: "#1E293B", // Fond sombre
-        light: "#F1F5F9", // Couleur claire
+        light: "#f8fafc", // Couleur claire
       },
       fontFamily: {
         sans: ["Inter", "sans-serif"], // Police principale
