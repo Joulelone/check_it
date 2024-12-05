@@ -1,7 +1,14 @@
 @font-face {
     font-family: 'Constructio Grotesk';
     src: url('/assets/fonts/ConstructioGrotesk-Regular.ttf') format('truetype');
-    font-weight: 400; /* Modifier si besoin (e.g., 700 pour le gras) */
+    font-weight: 400;
     font-style: normal;
-  }
-  
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Constructio Grotesk', sans-serif;
+}
