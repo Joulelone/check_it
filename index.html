@@ -4,65 +4,92 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projet Alpine.js</title>
-  <link rel="stylesheet" href="style.css">
+  <link href="/dist/output.css" rel="stylesheet">
   <meta name="theme-color" content="#4A90E2">
   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 <body>
-  <header class="header">
-    <h1>Astuces pour détecter la désinformation</h1>
-    <p>Informations sur la désinformation</p>
-    <button>En savoir plus</button>
-  </header>
-  <section class="section">
-    <h2>Prévention</h2>
-    <p>aucibus erat aliquam nibh.</p>
-    <img src="assets/img.jpg" alt="Image de prévention">
-  </section>
-  <section class="about">
-    <h2>Qui sommes-nous ?</h2>
-    <p>
-      Slate helps you see how many more days you need to work to reach your financial goal.
-    </p>
-  </section>
-  <section class="newsletter">
-    <h2>At your fingertips</h2>
-    <h3>Newsletter</h3>
-    <p>
-      Most calendars are designed for teams. Slate is designed for freelancers.
-    </p>
-    <img src="assets/img3.jpg" alt="Illustration Newsletter">
-    <form>
-      <input type="email" placeholder="Your Email">
-      <button type="submit">Subscribe</button>
-    </form>
-  </section>
-  <section class="partners">
-    <h2>Partenaires</h2>
-    <p>Voici nos partenaires</p>
-    <div class="partner-box">blablabla</div>
-    <div class="partner-box">République Française</div>
-    <div class="partner-box">Santé publique</div>
-  </section>
-  <section class="contact">
-    <h2>Contactez-nous</h2>
-    <p>Des experts sont à votre disposition pour répondre à vos questions</p>
-    <div class="social-icons">
-      <a href="#" aria-label="Twitter">🐦</a>
-      <a href="#" aria-label="Facebook">📘</a>
-      <a href="#" aria-label="LinkedIn">🔗</a>
+  <header class="bg-primary text-light p-6 flex justify-between items-center">
+    <h1 class="text-4xl font-heading font-bold">Check it</h1>
+    <button class="bg-secondary text-primary px-6 py-2 rounded-lg font-bold hover:bg-accent">
+      Participer au podcast
+    </button>
+  </header>  
+  <section class="bg-primary text-light p-12 flex justify-between items-center">
+    <div>
+      <h2 class="text-5xl font-heading font-bold">Partagez votre histoire</h2>
+      <ul class="mt-4 space-y-2">
+        <li class="flex items-center gap-2"><span>✔</span> Partagez</li>
+        <li class="flex items-center gap-2"><span>✔</span> Discutez</li>
+        <li class="flex items-center gap-2"><span>✔</span> Informez</li>
+      </ul>
+      <button class="mt-6 bg-secondary text-primary px-6 py-2 rounded-lg font-bold">Participer au podcast</button>
     </div>
-    <p>adresse</p>
-    <p>numéro de tél</p>
-    <p>email@example.com</p>
-    <h2>Contact Us</h2>
-    <form class="contact-form">
-      <input type="text" placeholder="Your Name" name="name" required>
-      <input type="email" placeholder="Your Email" name="email" required>
-      <textarea placeholder="Your Message" name="message" rows="5" required></textarea>
-      <button type="submit">Send</button>
-    </form> 
+    <img src="/assets/img.jpg" alt="Podcast" class="w-1/3 rounded-lg shadow-lg">
   </section>
+  <section class="p-12 text-primary bg-light">
+    <h2 class="text-4xl font-heading font-bold mb-6">Qu'est-ce que Check it ?</h2>
+    <p class="text-lg">
+      Check It est une campagne fondée par l'ARCOM pour lutter contre la désinformation...
+    </p>
+    <div class="mt-8 grid grid-cols-2 gap-6">
+      <div class="text-center">
+        <p class="text-3xl font-bold">3h30</p>
+        <p class="text-sm">EN MOYENNE sur internet</p>
+      </div>
+      <div class="text-center">
+        <p class="text-3xl font-bold">5.7</p>
+        <p class="text-sm">ÉCRAN en moyenne dans un foyer</p>
+      </div>
+      <div class="text-center">
+        <p class="text-3xl font-bold">2.1M</p>
+        <p class="text-sm">FAKE NEWS en 2023</p>
+      </div>
+      <div class="text-center">
+        <p class="text-3xl font-bold">74%</p>
+        <p class="text-sm">CONFRONTÉ aux fausses informations</p>
+      </div>
+    </div>
+  </section>  
+  <section class="bg-primary text-light p-12">
+    <h2 class="text-4xl font-heading font-bold mb-6">Écouter pour se protéger</h2>
+    <div class="grid grid-cols-3 gap-6">
+      <div class="flex flex-col items-center">
+        <span class="text-5xl">👨‍⚕️</span>
+        <p class="mt-2">Experts</p>
+      </div>
+      <div class="flex flex-col items-center">
+        <span class="text-5xl">📖</span>
+        <p class="mt-2">Témoignages</p>
+      </div>
+      <div class="flex flex-col items-center">
+        <span class="text-5xl">📊</span>
+        <p class="mt-2">Analyses</p>
+      </div>
+    </div>
+  </section>  
+  <section class="bg-light p-12">
+    <h2 class="text-4xl font-heading font-bold mb-6">Partagez votre histoire</h2>
+    <form class="space-y-4">
+      <div>
+        <label class="block text-primary">Prénom</label>
+        <input type="text" class="w-full border border-gray-300 rounded-lg p-2">
+      </div>
+      <div>
+        <label class="block text-primary">Nom</label>
+        <input type="text" class="w-full border border-gray-300 rounded-lg p-2">
+      </div>
+      <div>
+        <label class="block text-primary">Mail</label>
+        <input type="email" class="w-full border border-gray-300 rounded-lg p-2">
+      </div>
+      <div>
+        <label class="block text-primary">Message</label>
+        <textarea class="w-full border border-gray-300 rounded-lg p-2"></textarea>
+      </div>
+      <button class="bg-secondary text-primary px-6 py-2 rounded-lg font-bold">Envoyer</button>
+    </form>
+  </section>  
   <footer class="footer">
     <p>Nom de notre agence</p>
     <nav>
