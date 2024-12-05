@@ -19,7 +19,7 @@
   <section class="bg-primary text-light p-12 flex flex-col md:flex-row justify-between items-center gap-6">
     <div class="text-center md:text-left">
       <h2 class="text-6xl font-bold mb-4 leading-tight font-grotesk">
-        Partagez <br> votre histoire
+        Partagez <br> votre <br> histoire
       </h2>
       <ul class="mt-4 space-y-2 text-lg font-montserrat">
         <li class="flex items-center gap-2"><span>✔</span> Partagez</li>
@@ -35,7 +35,7 @@
   <!-- Section: Qu'est-ce que Check it ? -->
   <section class="p-12 bg-light flex flex-row gap-12 items-center">
     <div class="w-1/2">
-      <h2 class="text-4xl font-heading font-bold mb-6">Qu'est-ce que Check it ?</h2>
+      <h2 class="text-4xl font-heading font-bold mb-6">Qu'est-ce que<br>Check it ?</h2>
       <p class="text-lg">
         Check It est une campagne fondée par l'ARCOM pour lutter contre la désinformation et sensibiliser le public. À travers des outils pratiques, nous aidons à vérifier les sources et protéger la vérité en ligne.
       </p>
@@ -62,7 +62,7 @@
   <!-- Section: Écouter pour se protéger -->
   <section class="bg-primary text-light p-12 flex flex-row gap-12 items-center">
     <div class="w-1/2">
-      <h2 class="text-4xl font-heading font-bold mb-6">Écouter pour se protéger</h2>
+      <h2 class="text-4xl font-heading font-bold mb-6">Écouter pour <br> se protéger</h2>
       <p class="text-lg">
         Plongez dans des récits captivants, des analyses d'experts et des témoignages inspirants pour mieux comprendre et interpréter nos médias.
       </p>
@@ -85,7 +85,7 @@
   <!-- Section: Partagez votre histoire (formulaire) -->
   <section class="bg-light p-12 flex flex-row gap-12 items-center">
     <div class="w-1/2">
-      <h2 class="text-4xl font-heading font-bold mb-6">Partagez votre histoire</h2>
+      <h2 class="text-4xl font-heading font-bold mb-6">Partagez <br> votre <br> histoire</h2>
       <p class="text-lg">
         Prenez la parole, partagez votre histoire et inspirez d'autres personnes avec votre expérience.
       </p>
@@ -111,34 +111,40 @@
     </form>
   </section>
   <!-- Section: Podcast -->
-  <section class="p-12 bg-light flex flex-row gap-12 items-center">
+  <section class="p-12 bg-primary flex flex-row gap-12 items-center text-light">
     <div class="w-1/2">
-      <h2 class="text-4xl font-heading font-bold mb-6">Découvrez notre podcast</h2>
+      <h2 class="text-4xl font-heading font-bold mb-6">Découvrez <br> notre <br> podcast</h2>
     </div>
     <ul class="w-1/2 space-y-4">
-      <li class="flex justify-between items-center bg-gray-100 p-4 rounded-lg shadow">
-        <span>J'ai perdu ma maison</span>
-        <button class="text-blue-500">Aperçu</button>
+      <li class="flex flex-col bg-gray-800 text-white p-4 rounded-lg shadow space-y-2">
+        <span class="text-lg font-semibold">J'ai saboté mon avenir</span>
+        <div class="flex items-center space-x-4">
+          <!-- Boutons de contrôle -->
+          <audio controls class="w-full">
+            <source src="/assets/sounds/podcast.mp3" type="audio/mpeg">
+            Votre navigateur ne prend pas en charge l'élément audio.
+          </audio>
+        </div>
       </li>
-      <li class="flex justify-between items-center bg-gray-100 p-4 rounded-lg shadow">
+      <li class="flex justify-between items-center p-4 rounded-lg shadow">
         <span>J'ai vécu 6 ans dans un bunker</span>
         <button class="text-blue-500">Aperçu</button>
       </li>
-      <li class="flex justify-between items-center bg-gray-100 p-4 rounded-lg shadow">
+      <li class="flex justify-between items-center p-4 rounded-lg shadow">
         <span>La Terre est plate</span>
         <button class="text-blue-500">Aperçu</button>
       </li>
-      <li class="flex justify-between items-center bg-gray-100 p-4 rounded-lg shadow">
+      <li class="flex justify-between items-center p-4 rounded-lg shadow">
         <span>J'ai arrêté l'eau</span>
         <button class="text-blue-500">Aperçu</button>
       </li>
     </ul>
   </section>
   <section class="p-12 text-primary bg-light">
-    <p class="text-lg">
-      Logo de l'ARCOM
-    </p>
-    <div class="mt-8 grid grid-cols-2 gap-6">
+    <div class="w-1/2">
+      <img src="/assets/arcomlogo.png" alt="Logo Check it" class="h-6">
+    </div>
+    <div class="mt-8 grid grid-cols-2 gap-6 w-1/2">
       <div class="text-center">
         <p class="text-base">Fondation</p>
       </div>

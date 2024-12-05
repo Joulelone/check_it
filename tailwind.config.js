@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#1E3A8A", // Bleu principal
+        primary: "#141433", // Bleu principal
         secondary: "#60A5FA", // Bleu clair
         background: "#1E293B", // Fond sombre
         light: "#f8fafc", // Couleur claire
