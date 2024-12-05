@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'Constructio Grotesk';
+    src: url('/assets/fonts/ConstructioGrotesk-Regular.ttf') format('truetype');
+    font-weight: 400; /* Modifier si besoin (e.g., 700 pour le gras) */
+    font-style: normal;
+  }
+  

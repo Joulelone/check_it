@@ -14,8 +14,8 @@ module.exports = {
         light: "#f8fafc", // Couleur claire
       },
       fontFamily: {
-        sans: ["Inter", "sans-serif"], // Police principale
-        heading: ["Poppins", "sans-serif"], // Police pour les titres
+        montserrat: ["Montserrat", "sans-serif"],
+        grotesk: ["Constructio Grotesk", "sans-serif"],
       },
     },
   },
