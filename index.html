@@ -11,9 +11,6 @@
 <body>
   <header class="bg-primary text-light p-6 flex justify-between items-center">
     <h1 class="text-4xl font-heading font-bold">Check it</h1>
-    <button class="bg-secondary text-primary px-6 py-2 rounded-lg font-bold hover:bg-accent">
-      Participer au podcast
-    </button>
   </header>  
   <section class="bg-primary text-light p-12 flex justify-between items-center">
     <div>
@@ -70,7 +67,10 @@
   </section>  
   <section class="bg-light p-12">
     <h2 class="text-4xl font-heading font-bold mb-6">Partagez votre histoire</h2>
-    <form class="space-y-4">
+    <p class="text-lg">
+      Prenez la parole, partagez votre histoire et inspirez d'autres personnes avec votre expérience.
+    </p>
+      <form class="space-y-4">
       <div>
         <label class="block text-primary">Prénom</label>
         <input type="text" class="w-full border border-gray-300 rounded-lg p-2">
@@ -89,20 +89,42 @@
       </div>
       <button class="bg-secondary text-primary px-6 py-2 rounded-lg font-bold">Envoyer</button>
     </form>
-  </section>  
-  <footer class="footer">
-    <p>Nom de notre agence</p>
-    <nav>
-      <a href="#prevention">Prévention</a>
-      <a href="#about">Qui sommes-nous ?</a>
-      <a href="#contact">Contactez-nous</a>
-      <a href="#partners">Partenaires</a>
-    </nav>
-    <div class="social-icons">
-      <a href="#" aria-label="Twitter">🐦</a>
-      <a href="#" aria-label="Facebook">📘</a>
-      <a href="#" aria-label="LinkedIn">🔗</a>
+  </section>
+  <section class="p-12 text-primary bg-light">
+    <div class="mt-8 grid grid-cols-2 gap-6">
+      <div class="text-center">
+        <p class="text-xl">Découvrez notre Podcast</p>
+      </div>
+      <div class="text-center">
+        <p class="text-base">Partie ou le podcast sera afficher</p>
+      </div>
     </div>
+  </section>
+  <section class="p-12 text-primary bg-light">
+    <p class="text-lg">
+      Logo de l'ARCOM
+    </p>
+    <div class="mt-8 grid grid-cols-2 gap-6">
+      <div class="text-center">
+        <p class="text-base">Fondation</p>
+      </div>
+      <div class="text-center">
+        <p class="text-sm">Check It est une campagne fondée par l'ARCOM pour lutter contre la désinformation et promouvoir une information fiable et responsable.</p>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="social-icons">
+      <a href="#" aria-label="Instagram">🐦</a>
+      <a href="#" aria-label="Youtube">📘</a>
+      <a href="#" aria-label="Tiktok">🔗</a>
+    </div>
+    <nav>
+      <a href="#espacepresse">ESPACE PRESSE</a>
+      <a href="#donneespersonnelles">DONNEES PERSONNELLES</a>
+      <a href="#mentionslegales">MENTIONS LEGALES</a>
+      <a href="#contact">CONTACT</a>
+    </nav>
   </footer>
 
   <!-- Script pour enregistrer le Service Worker -->
@@ -120,53 +142,3 @@
   </script>
 </body>
 </html>
-<!-- <body>
-  <div x-data="{ count: 0 }">
-    <h1 x-text="count"></h1>
-    <button @click="count++">Increment</button>
-    <button @click="count--">Decrement</button>
-  </div>
-  <div x-data="{ show: true }">
-    <button @click="show = !show">Toggle</button>
-    <div x-show="show">
-      Ce contenu est visible lorsque "show" est vrai.
-    </div>
-  </div>
-  <div x-data="{ text: '', displayText: '' }">
-    <input type="text" x-model="text" @keydown.enter="displayText = text" placeholder="Tapez quelque chose">
-    <p x-show="displayText" x-text="displayText"></p>
-  </div>
-  <div x-data="{ open: false }">
-    <button @click="open = !open">Afficher/Masquer avec Transition</button>
-    <div x-show="open" x-transition:enter="transition ease-out duration-300"
-         x-transition:enter-start="opacity-0 transform scale-90"
-         x-transition:enter-end="opacity-100 transform scale-100"
-         x-transition:leave="transition ease-in duration-300"
-         x-transition:leave-start="opacity-100 transform scale-100"
-         x-transition:leave-end="opacity-0 transform scale-90">
-      Contenu avec animation
-    </div>
-  </div>
-  <div x-data="{ active: false }">
-    <button @click="active = !active" :class="{ 'bg-blue-500 text-white': active, 'bg-gray-300': !active }">
-      Bouton avec classes dynamiques
-    </button>
-  </div>
-  <div x-data="{ dragging: null, items: ['A', 'B', 'C'] }">
-    <template x-for="(item, index) in items" :key="item">
-      <div draggable="true" 
-           @dragstart="dragging = index"
-           @dragover.prevent 
-           @drop="items.splice(index, 0, items.splice(dragging, 1)[0])"
-           class="border p-2 m-2">
-        <span x-text="item"></span>
-      </div>
-    </template>
-  </div>      
-  <div x-data="{ items: ['Apple', 'Banana', 'Cherry'] }">
-    <template x-for="item in items" :key="item">
-      <p x-text="item"></p>
-    </template>
-  </div>      
-</body>
-</html> -->
