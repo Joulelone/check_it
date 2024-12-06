@@ -111,35 +111,41 @@
     </form>
   </section>  
   <!-- Section: Podcast -->
-  <section class="p-12 bg-primary flex flex-row gap-12 items-center text-light">
-    <div class="w-1/2">
-      <h2 class="text-4xl font-heading font-bold mb-6"><span class="text-[#82D5FF]">Découvrez</span> <br> nos podcasts</h2>
+  <section class="p-12 bg-primary flex flex-col md:flex-row gap-12 items-center text-light">
+    <!-- Titre -->
+    <div class="w-full md:w-1/2 text-center md:text-left">
+      <h2 class="text-4xl font-heading font-bold mb-6">
+        <span class="text-[#82D5FF]">Découvrez</span> <br> nos podcasts
+      </h2>
     </div>
-    <ul class="w-1/2 space-y-4">
+    <!-- Podcasts -->
+    <ul class="w-full md:w-1/2 space-y-4">
+      <!-- Podcast principal -->
       <li class="flex flex-col bg-gray-800 text-white p-4 rounded-lg shadow space-y-2">
         <span class="text-lg font-semibold">J'ai saboté mon avenir</span>
         <div class="flex items-center space-x-4">
-          <!-- Boutons de contrôle -->
+          <!-- Lecteur audio -->
           <audio controls class="w-full">
             <source src="/assets/sounds/podcast.mp3" type="audio/mpeg">
             Votre navigateur ne prend pas en charge l'élément audio.
           </audio>
         </div>
       </li>
-      <li class="flex justify-between items-center p-4 rounded-lg shadow">
+      <!-- Liste des autres podcasts -->
+      <li class="flex justify-between items-center p-4 bg-gray-800 rounded-lg shadow">
         <span>J'ai vécu 6 ans dans un bunker</span>
-        <button class="text-blue-500">Aperçu</button>
+        <button class="text-blue-500 hover:underline">Aperçu</button>
       </li>
-      <li class="flex justify-between items-center p-4 rounded-lg shadow">
+      <li class="flex justify-between items-center p-4 bg-gray-800 rounded-lg shadow">
         <span>La Terre est plate</span>
-        <button class="text-blue-500">Aperçu</button>
+        <button class="text-blue-500 hover:underline">Aperçu</button>
       </li>
-      <li class="flex justify-between items-center p-4 rounded-lg shadow">
+      <li class="flex justify-between items-center p-4 bg-gray-800 rounded-lg shadow">
         <span>J'ai arrêté l'eau</span>
-        <button class="text-blue-500">Aperçu</button>
+        <button class="text-blue-500 hover:underline">Aperçu</button>
       </li>
     </ul>
-  </section>
+  </section>  
   <section class="p-12 bg-light flex flex-col md:flex-row items-center justify-between text-primary">
     <!-- Logo -->
     <div class="w-full md:w-1/2 flex justify-center md:justify-start mb-6 md:mb-0">
