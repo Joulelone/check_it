@@ -153,20 +153,32 @@
       </div>
     </div>
   </section>
-  <footer class="footer">
-    <div class="social-icons">
-      <a href="#" aria-label="Instagram">🐦</a>
-      <a href="#" aria-label="Youtube">📘</a>
-      <a href="#" aria-label="Tiktok">🔗</a>
+  <footer class="bg-primary text-light p-6">
+    <div class="flex justify-center items-center space-x-6 mb-4">
+      <!-- Icônes des réseaux sociaux -->
+      <a href="#" aria-label="Instagram">
+        <img src="/assets/insta.png" alt="Instagram" class="h-6">
+      </a>
+      <a href="#" aria-label="YouTube">
+        <img src="/assets/youtube.png" alt="YouTube" class="h-6">
+      </a>
+      <a href="#" aria-label="TikTok">
+        <img src="/assets/tiktok.png" alt="TikTok" class="h-6">
+      </a>
     </div>
-    <nav>
-      <a href="#espacepresse">ESPACE PRESSE</a>
-      <a href="#donneespersonnelles">DONNEES PERSONNELLES</a>
-      <a href="#mentionslegales">MENTIONS LEGALES</a>
-      <a href="#contact">CONTACT</a>
+    <nav class="flex flex-col items-center text-sm space-y-2">
+      <div class="flex space-x-4">
+      <a href="#espacepresse" class="hover:underline">ESPACE PRESSE</a>
+      <span>|</span>
+      <a href="#donneespersonnelles" class="hover:underline">DONNÉES PERSONNELLES</a>
+    </div>
+    <div class="flex space-x-4">
+      <a href="#mentionslegales" class="hover:underline">MENTIONS LÉGALES</a>
+      <span>|</span>
+      <a href="#contact" class="hover:underline">CONTACT</a>
+    </div>
     </nav>
-  </footer>
-
+  </footer>  
   <!-- Script pour enregistrer le Service Worker -->
   <script>
     if ("serviceWorker" in navigator) {
